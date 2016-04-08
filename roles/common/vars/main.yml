@@ -1,0 +1,60 @@
+---
+# Variable file for the "common" role
+# Package vars
+xorg_deps_list:
+  - mesa-libgl
+  - xf86-input-evdev
+  
+xorg_pkg_list:
+  - xorg-server
+  - xorg-server-utils
+  - xorg-xinit
+  
+# Add video drivers here  
+drvrs_list:
+  - mesa
+  
+font_pkg_list:
+  - ttf-dejavu
+  - ttf-droid
+  - ttf-inconsolata
+  - terminus-font
+  - dina-font
+  - adobe-source-code-pro-fonts
+  - adobe-source-sans-pro-fonts
+  - adobe-source-serif-pro-fonts
+  
+admin_pkg_list:
+  - htop
+  - lsof
+
+archive_pkg_list:
+  - unzip
+  - unrar
+  - p7zip
+
+misc_pkg_list:
+  - git
+  - vim
+  - zsh
+  - lxterminal
+  - lxappearance
+  - tmux
+  - asciidoc
+  - archey3
+  - ipython
+
+# File vars
+dir_list:
+  - AUR
+  - bin
+  - Documents
+  - Downloads
+  - make
+  - Music
+
+# User vars
+main_user:
+  name: mpatton
+  comment: "Marc Patton"
+...

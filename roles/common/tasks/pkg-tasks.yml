@@ -1,0 +1,36 @@
+---
+# From [[Arch-Install-Ansible.md]] - roles/common/tasks/main.yml
+# See [[Projx_Arch-Install-i3.md]] for a list of packages to install here
+- name: update package databases
+  pacman: update_cache=yes
+
+- name: install xorg dependencies
+  pacman: name={{ item }} state=present
+  with_items: "{{ xorg_deps_list }}"
+
+- name: install xorg necessities
+  pacman: name={{ item }} state=present
+  with_items: "{{ xorg_pkg_list }}"
+ 
+# Use Ansible facts and host_vars to determine grapichs card and install correct video drivers at this point
+# Also use facts to determine if a laptop or desktop; laptops will need networkmanager installed 
+- name: install video drivers
+  pacman: name={{ item }} state=present
+  with_items: "{{ drvrs_list }}"
+
+- name: install fonts
+  pacman: name={{ item }} state=present
+  with_items: "{{ font_pkg_list }}"
+  
+- name: install admin tools
+  pacman: name={{ item }} state=present
+  with_items: "{{ admin_pkg_list }}"
+  
+- name: install archive utils
+  pacman: name={{ item }} state=present
+  with_items: "{{ archive_pkg_list }}"
+  
+- name: install other utils
+  pacman: name={{ item }} state=present
+  with_items: "{{ misc_pkg_list }}"
+...
