@@ -7,5 +7,5 @@
   copy: src=bashrc dest=/home/mpatton/.bashrc owner=mpatton group=users
 
 - name: copy actual bash config files
-  copy: src=bash dest/home/mpatton/.config/bash owner=mpatton group=users
+  copy: src=bash dest=/home/mpatton/.config/bash owner=mpatton group=users
 ...
