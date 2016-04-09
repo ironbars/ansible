@@ -1,0 +1,17 @@
+---
+# Variable file for the "development" role
+window_mgr_list:
+  - i3-wm
+  - dmenu
+
+dev_tools_list:
+  - ack
+  - gdb
+
+lang_pkg_list:
+  - mono
+  - ghc
+  - ruby
+  - rust
+  - sqlite
+...

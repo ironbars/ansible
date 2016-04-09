@@ -1,0 +1,14 @@
+---
+# Package tasks for the "development" role
+- name: install window manager necessities
+  pacman: name={{ item }} state=present
+  with_items: "{{ window_mgr_list }}"
+
+- name: install developer tools
+  pacman: name={{ item }} state=present
+  with_items: "{{ dev_tools_list }}"
+
+- name: install programming languages
+  pacman: name={{ item }} state=present
+  with_items: "{{ lang_pkg_list }}"
+...
