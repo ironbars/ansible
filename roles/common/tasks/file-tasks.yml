@@ -1,0 +1,11 @@
+---
+# File tasks for the common role
+- name: copy sourcing vimrc
+  copy: src=vimrc dest=/home/mpatton/.vimrc owner=mpatton group=users
+
+- name: copy actual vimrc
+  copy: src=vimrc-real dest=/home/mpatton/.config/vim/vimrc owner=mpatton group=users
+
+- name: copy vim directory
+  copy: src=vim dest/home/mpatton/.vim owner=mpatton group=users
+...
