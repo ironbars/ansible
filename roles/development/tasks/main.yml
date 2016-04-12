@@ -1,5 +1,5 @@
 ---
 # Task file for the development role
-- include: pkg-tasks.yml
-- include: file-tasks.yml
+- include: includes/pkg-tasks.yml
+- include: includes/file-tasks.yml
 ...

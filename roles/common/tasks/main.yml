@@ -1,5 +1,5 @@
 ---
-- include: pkg-tasks.yml
-- include: user-tasks.yml
-- include: file-tasks.yml
+- include: includes/pkg-tasks.yml
+- include: includes/user-tasks.yml
+- include: includes/file-tasks.yml
 ...
