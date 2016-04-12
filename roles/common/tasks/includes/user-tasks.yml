@@ -1,0 +1,11 @@
+---
+- name: add user
+  user:
+    name: "{{ main_user.name }}"
+    comment: "{{ main_user.comment }}"
+    groups: wheel,network,video,users
+
+- name: create user directories
+  file: path=/home/mpatton/{{ item }} state=directory owner=mpatton group=users
+  with_items: "{{ dir_list }}"
+...

@@ -1,0 +1,23 @@
+---
+# File tasks for the development role
+- name: copy sourcing bash_profile
+  copy:
+    src: home/user/bash_profile
+    dest: /home/mpatton/.bash_profile
+    owner: mpatton
+    group: users
+
+- name: copy sourcing bashrc
+  copy: 
+    src: home/user/bashrc
+    dest: /home/mpatton/.bashrc
+    owner: mpatton
+    group: users
+
+- name: copy actual bash config files
+  copy: 
+    src: home/user/config/bash
+    dest: /home/mpatton/.config/bash
+    owner: mpatton
+    group: users
+...
