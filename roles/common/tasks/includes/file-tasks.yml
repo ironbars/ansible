@@ -27,4 +27,11 @@
     dest: /home/mpatton/.config/git
     owner: mpatton
     group: users
+
+- name: copy root's bashrc
+  copy:
+    src: root/bashrc
+    dest: /root/.bashrc
+    owner: root
+    group: root
 ...
