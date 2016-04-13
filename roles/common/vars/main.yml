@@ -43,6 +43,8 @@ misc_pkg_list:
   - asciidoc
   - archey3
   - ipython
+  - lightdm
+  - lightdm-gtk-greeter
 
 # File vars
 dir_list:
