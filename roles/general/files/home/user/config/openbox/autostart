@@ -1,0 +1,6 @@
+nitrogen --restore &
+volumeicon &
+compton --config ~/.config/compton.conf --shadow-exclude 'n:a:Conky' -b &
+tint2 &
+#conky &
+#/usr/lib/lxpolkit/lxpolkit &
