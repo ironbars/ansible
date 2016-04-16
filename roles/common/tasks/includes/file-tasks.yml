@@ -7,24 +7,17 @@
     owner: mpatton
     group: users
 
-- name: copy actual vimrc
+- name: copy config directory
   copy:
-    src: home/user/config/vim/vimrc-real
-    dest: /home/mpatton/.config/vim/vimrc-real
+    src: home/user/config/
+    dest: /home/mpatton/.config
     owner: mpatton
     group: users
 
 - name: copy vim directory
   copy:
-    src: home/user/vim
+    src: home/user/vim/
     dest: /home/mpatton/.vim
-    owner: mpatton
-    group: users
-
-- name: copy git directory
-  copy:
-    src: home/user/config/git
-    dest: /home/mpatton/.config/git
     owner: mpatton
     group: users
 

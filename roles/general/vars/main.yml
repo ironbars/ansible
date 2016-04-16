@@ -1,0 +1,25 @@
+---
+# Variable file for the "general" role
+window_mgr_list:
+  - openbox
+  - obconf
+  - tint2
+  - compton
+  - conky
+  - nitrogen
+
+# Packages for extra functionality
+fcn_pkg_list:
+  - gsimplecal
+  - parcellite
+  - volumeicon
+  - alsa-utils
+  - xfce4-notifyd
+  - network-manager-applet
+
+# Other packages
+misc_pkg_list:
+  - numix-themes
+  - scrot
+  - gpicview
+...

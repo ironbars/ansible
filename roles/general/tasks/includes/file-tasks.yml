@@ -1,0 +1,37 @@
+---
+# File tasks for the general role
+- name: copy bashrc
+  copy:
+    src: home/user/bashrc
+    dest: /home/mpatton/.bashrc
+    owner: mpatton
+    group: users
+
+- name: copy bash profile
+  copy:
+    src: home/user/bash_profile
+    dest: /home/mpatton/.bash_profile
+    owner: mpatton
+    group: users
+
+- name: copy user config files
+  copy:
+    src: home/user/config/
+    dest: /home/mpatton/.config/
+    owner: mpatton
+    group: users
+
+- name: copy wallpapers
+  copy:
+    src: home/user/Downloads/
+    dest: /home/mpatton/Downloads/
+    owner: mpatton
+    group: users
+
+- name: copy display manager configs
+  copy:
+    src: etc/lightdm/lightdm.conf
+    dest: /etc/lightdm/lightdm.conf
+    owner: root
+    group: root
+...

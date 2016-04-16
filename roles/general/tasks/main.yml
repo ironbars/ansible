@@ -1,0 +1,4 @@
+---
+- include: includes/pkg-tasks.yml
+- include: includes/file-tasks.yml
+...

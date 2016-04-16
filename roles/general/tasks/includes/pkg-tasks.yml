@@ -1,0 +1,14 @@
+---
+# Package tasks for the general role
+- name: install window manager set
+  pacman: name={{ item }} state=present
+  with_items: "{{ window_mgr_list }}"
+
+- name: install functional extras
+  pacman: name={{ item }} state=present
+  with_items: "{{ fcn_pkg_list }}"
+
+- name: install other packages
+  pacman: name={{ item }} state=present
+  with_items: "{{ misc_pkg_list }}"
+...

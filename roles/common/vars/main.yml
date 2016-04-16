@@ -35,7 +35,7 @@ archive_pkg_list:
 
 misc_pkg_list:
   - git
-  - vim
+  - gvim
   - zsh
   - lxterminal
   - lxappearance
