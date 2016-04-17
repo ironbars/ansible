@@ -21,6 +21,13 @@
     owner: mpatton
     group: users
 
+- name: copy sudoers file
+  copy:
+    src: etc/sudoers
+    dest: /etc/sudoers
+    owner: root
+    group: root
+
 - name: copy root's bashrc
   copy:
     src: root/bashrc
