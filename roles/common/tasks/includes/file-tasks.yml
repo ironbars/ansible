@@ -28,10 +28,17 @@
     owner: root
     group: root
 
-- name: copy root's bashrc
+- name: copy bashrc for root
   copy:
     src: root/bashrc
     dest: /root/.bashrc
     owner: root
     group: root
+
+- name: copy file of post-install tasks
+  copy:
+    src: home/user/README.md
+    dest: /home/mpatton/README.md
+    owner: mpatton
+    group: users
 ...
