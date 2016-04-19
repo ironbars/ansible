@@ -10,10 +10,13 @@ from the AUR must be performed manually.
 Install AUR Packages
 --------------------
 
+### All ###
 * cower
 * pacaur
 * google-chrome
 * vim-pathogen
+
+### General ###
 * numix-themes-blue
 * numix-themes-darkblue
 * numix-themes-electric
@@ -21,6 +24,9 @@ Install AUR Packages
 * numix-icon-theme-git
 * numix-bevel-icon-theme-git
 * numix-shine-icon.theme-git
+
+### Development ###
+* gtk-theme-arc
 
 Other Manual Configuration
 --------------------------
