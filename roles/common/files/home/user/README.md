@@ -55,4 +55,10 @@ Window Manager Configuration (i3)
 
 This section is for "development" machines.
 
-TODO
+1. Run `lxappearance` and set the following configurations:
+
+	* Widget theme: Arc-Darker
+	* Font: Source Sans Pro 10
+	* Icon theme: Flattr
+
+2. (i3) - this should be taken care of by the copied config files.

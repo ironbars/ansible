@@ -3,6 +3,7 @@
 window_mgr_list:
   - i3-wm
   - dmenu
+  - flattr-icon-theme
 
 dev_tools_list:
   - ack
