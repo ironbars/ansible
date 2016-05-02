@@ -36,8 +36,8 @@ alias grep='grep --color=tty -d skip'
 alias cp='cp -i'
 alias df='df -h'
 alias free='free -m'
-alias bashrc='vim ~/.config/bash/bashrc'
-alias vimrc='vim ~/.config/vim/vimrc'
+alias bashrc='vim ~/.config/bash/bashrc-real'
+alias vimrc='vim ~/.config/vim/vimrc-real'
 alias cls='echo "Use Ctrl+L!!!"'
 
 # Arch (Antergos) specific
