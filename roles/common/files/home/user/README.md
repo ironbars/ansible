@@ -27,6 +27,9 @@ Install AUR Packages
 
 ### Development ###
 * gtk-theme-arc
+* moka-icon-theme-git
+	* Dependency: faba-icon-theme-git
+	* Dependency: faba-mono-icons-git
 
 Other Manual Configuration
 --------------------------
