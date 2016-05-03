@@ -45,6 +45,7 @@ misc_pkg_list:
   - ipython
   - lightdm
   - lightdm-gtk-greeter
+  - compton
 
 # File vars
 dir_list:

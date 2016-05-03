@@ -2,7 +2,7 @@
 # Variable file for the "development" role
 window_mgr_list:
   - i3-wm
-  - dmenu
+  - rofi
   - flattr-icon-theme
 
 dev_tools_list:
