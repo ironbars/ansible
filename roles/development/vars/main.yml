@@ -4,6 +4,7 @@ window_mgr_list:
   - i3-wm
   - rofi
   - flattr-icon-theme
+  - feh
 
 dev_tools_list:
   - ack

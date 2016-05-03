@@ -31,13 +31,6 @@ Install AUR Packages
 	* Dependency: faba-icon-theme-git
 	* Dependency: faba-mono-icons-git
 
-Other Manual Configuration
---------------------------
-
-1. Edit cower's config file as `~/.config/cower/config`.  Add the line 
-
-		TargetDir=$HOME/AUR
-
 Window Manager Configuraton (Openbox) 
 -------------------------------------
 
@@ -45,13 +38,13 @@ This section is for "general" machines.
 
 1. Run `lxappearance` and set the following configurations:
 
-	* Widget theme: Numix Frost
+	* Widget theme: Numix Frost (or Numix Blue, if Frost unavailable)
 	* Font: Source Sans Pro 10
 	* Icon theme: Numix
 
 2. (Openbox) - run `obconf` and set the following configurations:
 
-	* Theme: Numix Frost
+	* Theme: Numix Frost (or Numix Blue, if Frost unavailable)
 
 Window Manager Configuration (i3)
 ---------------------------------
@@ -65,3 +58,6 @@ This section is for "development" machines.
 	* Icon theme: Flattr
 
 2. (i3) - this should be taken care of by the copied config files.
+
+Other Manual Configuration
+--------------------------
