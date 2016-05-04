@@ -126,7 +126,7 @@ cl ()
 	if [[ -z "$DIR" ]]; then
 		DIR=$HOME
 	fi
-	if [[ -d "$DIR" ]]; then
+	if [[ -d "$DIR" || "$DIR" == "-" ]]; then
 		cd "$DIR"
 		ls
 	else
