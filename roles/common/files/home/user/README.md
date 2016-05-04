@@ -15,6 +15,7 @@ Install AUR Packages
 * pacaur
 * google-chrome
 * vim-pathogen
+* montecarlo-font
 
 ### General ###
 * numix-themes-blue

@@ -42,7 +42,7 @@ misc_pkg_list:
   - tmux
   - asciidoc
   - archey3
-  - ipython
+  - python
   - lightdm
   - lightdm-gtk-greeter
   - compton

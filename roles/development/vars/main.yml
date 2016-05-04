@@ -16,4 +16,5 @@ lang_pkg_list:
   - ruby
   - rust
   - sqlite
+  - ipython
 ...

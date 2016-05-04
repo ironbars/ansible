@@ -1,4 +1,5 @@
 ---
+# User tasks for the common role
 - name: add user
   user:
     name: "{{ main_user.name }}"
@@ -8,4 +9,10 @@
 - name: create user directories
   file: path=/home/mpatton/{{ item }} state=directory owner=mpatton group=users
   with_items: "{{ dir_list }}"
+
+- name: set default password
+  shell: echo "{{ main_user.name }}:default" | chpasswd
+
+- name: enforce password change next login
+  command: /usr/bin/chage -d 0 "{{ main_user.name }}"
 ...
