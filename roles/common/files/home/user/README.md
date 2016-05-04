@@ -62,3 +62,8 @@ This section is for "development" machines.
 
 Other Manual Configuration
 --------------------------
+
+For "development" machines:
+
+1. It may be necessary to manually set the terminal transparency.  Right click
+   in the terminal window, choose "Preferences", and set the opacity as desired.
