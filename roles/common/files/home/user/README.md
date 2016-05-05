@@ -16,6 +16,9 @@ Install AUR Packages
 * google-chrome
 * vim-pathogen
 * montecarlo-font
+* dropbox
+* nvpy
+    * Dependency: tk (in official repos - use pacman to install)
 
 ### General ###
 * numix-themes-blue
@@ -63,7 +66,11 @@ This section is for "development" machines.
 Other Manual Configuration
 --------------------------
 
-For "development" machines:
+1. After installing Dropbox, be sure to start the service as the window maanger
+   starts.
 
-1. It may be necessary to manually set the terminal transparency.  Right click
+	* Openbox: add `dropbox &` to `~/.config/openbox/autostart`.
+	* i3: add `exec dropbox` to the end of `~/.config/i3/config`.
+
+2. It may be necessary to manually set the terminal transparency.  Right click
    in the terminal window, choose "Preferences", and set the opacity as desired.

@@ -7,6 +7,13 @@
     owner: mpatton
     group: users
 
+- name: copy nvPY config file
+  copy:
+    src: home/user/nvpy.cfg
+    dest: /home/mpatton/.nvpy.cfg
+    owner: mpatton
+    group: users
+
 - name: copy config directory
   copy:
     src: home/user/config/
