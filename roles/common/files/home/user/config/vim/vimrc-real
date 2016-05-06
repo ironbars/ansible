@@ -64,5 +64,6 @@ imap <Esc> <C-c>
 "================================================
 au BufRead,BufNewFile *.sage set filetype=python
 au BufRead,BufNewFile *.adoc set filetype=asciidoc
+au BufRead,BufNewFile *bashrc* set filetype=sh
 
 execute pathogen#infect()

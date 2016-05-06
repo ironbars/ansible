@@ -29,15 +29,19 @@ export INPUTRC=$HOME/.config/bash/inputrc
 
 # Aliases
 # ----------------------------------------------------------------------------
-alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
-alias la='ls -a --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+#alias ls='ls --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+#alias ll='ls -l --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+#alias la='ls -a --group-directories-first --time-style=+"%d.%m.%Y %H:%M" --color=auto -F'
+alias ls='ls --group-directories-first --time-style=long-iso --color=auto -F'
+alias ll='ls -lh --group-directories-first --time-style=long-iso --color=auto -F'
+alias la='ls -a --group-directories-first --time-style=long-iso --color=auto -F'
 alias grep='grep --color=tty -d skip'
 alias cp='cp -i'
 alias df='df -h'
-alias free='free -m'
+alias free='free -h'
 alias bashrc='vim ~/.config/bash/bashrc-real'
 alias vimrc='vim ~/.config/vim/vimrc-real'
+alias sb='source ~/.config/bash/bashrc-real'
 alias cls='echo "Use Ctrl+L!!!"'
 
 # Arch (Antergos) specific
