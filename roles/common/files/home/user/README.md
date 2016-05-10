@@ -2,7 +2,7 @@ Post-install Tasks - Common
 ===========================
 
 The following tasks should be performed after a new machine is provisioned 
-using Ansible.  This consists mainly of installing AUR pakcages and configuring 
+using Ansible.  This consists mainly of installing AUR packages and configuring 
 them.  The AUR is not well suited to automation; many packages require manual 
 intervention.  It is for this reason that (for now), installation of software
 from the AUR must be performed manually.
@@ -27,13 +27,13 @@ Install AUR Packages
 * numix-frost-themes
 * numix-icon-theme-git
 * numix-bevel-icon-theme-git
-* numix-shine-icon.theme-git
+* numix-shine-icon-theme-git
 
 ### Development ###
 * gtk-theme-arc
 * moka-icon-theme-git
-	* Dependency: faba-icon-theme-git
-	* Dependency: faba-mono-icons-git
+    * Dependency: faba-icon-theme-git
+    * Dependency: faba-mono-icons-git
 
 Window Manager Configuraton (Openbox) 
 -------------------------------------
@@ -42,13 +42,13 @@ This section is for "general" machines.
 
 1. Run `lxappearance` and set the following configurations:
 
-	* Widget theme: Numix Frost (or Numix Blue, if Frost unavailable)
-	* Font: Source Sans Pro 10
-	* Icon theme: Numix
+    * Widget theme: Numix Frost (or Numix Blue, if Frost unavailable)
+    * Font: Source Sans Pro 10
+    * Icon theme: Numix
 
 2. (Openbox) - run `obconf` and set the following configurations:
 
-	* Theme: Numix Frost (or Numix Blue, if Frost unavailable)
+    * Theme: Numix Frost (or Numix Blue, if Frost unavailable)
 
 Window Manager Configuration (i3)
 ---------------------------------
@@ -57,9 +57,9 @@ This section is for "development" machines.
 
 1. Run `lxappearance` and set the following configurations:
 
-	* Widget theme: Arc-Darker
-	* Font: Source Sans Pro 10
-	* Icon theme: Flattr
+    * Widget theme: Arc-Darker
+    * Font: Source Sans Pro 10
+    * Icon theme: Flattr
 
 2. (i3) - this should be taken care of by the copied config files.
 
@@ -69,8 +69,16 @@ Other Manual Configuration
 1. After installing Dropbox, be sure to start the service as the window maanger
    starts.
 
-	* Openbox: add `dropbox &` to `~/.config/openbox/autostart`.
-	* i3: add `exec dropbox` to the end of `~/.config/i3/config`.
+    * Openbox: add `dropbox &` to `~/.config/openbox/autostart`.
+    * i3: add `exec dropbox` to the end of `~/.config/i3/config`.
+
+   Could also be started as a system service using `systemctl enable dropbox.service`.
 
 2. It may be necessary to manually set the terminal transparency.  Right click
    in the terminal window, choose "Preferences", and set the opacity as desired.
+
+3. For Chrome:
+
+    * Openbox: go to chrome://settings and click "Use GTK+ theme"
+    * i3: add the "Arc Dark" theme to Chrome
+
