@@ -33,4 +33,9 @@
 - name: install other utils
   pacman: name={{ item }} state=present
   with_items: "{{ misc_pkg_list }}"
+
+- name: install vim plugins
+  git: repo=https://github.com/{{ item.gitroot }}/{{ item.gitname }}.git
+       dest=/home/mpatton/.vim/bundle/{{ item.gitname }}
+  with_items: "{{ vim_plugin_list }}"
 ...

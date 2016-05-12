@@ -48,4 +48,11 @@
     dest: /home/mpatton/README.md
     owner: mpatton
     group: users
+
+- name: create directory for vim plugins
+  file:
+    path: /home/mpatton/.vim/bundle
+    owner: mpatton
+    group: users
+    state: directory
 ...
