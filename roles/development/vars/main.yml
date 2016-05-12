@@ -7,7 +7,6 @@ window_mgr_list:
   - feh
 
 dev_tools_list:
-  - ack
   - gdb
 
 lang_pkg_list:
