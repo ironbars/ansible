@@ -74,11 +74,15 @@ Other Manual Configuration
 
    Could also be started as a system service using `systemctl enable dropbox.service`.
 
-2. It may be necessary to manually set the terminal transparency.  Right click
-   in the terminal window, choose "Preferences", and set the opacity as desired.
+2. It may be necessary to manually set the terminal transparency, if LXTerminal
+   is being used.  Right click in the terminal window, choose "Preferences", and
+   set the opacity as desired.
 
 3. For Chrome:
 
     * Openbox: go to chrome://settings and click "Use GTK+ theme"
     * i3: add the "Arc Dark" theme to Chrome
+    * Add AdBlock to Chrome
+    * Add Vimium to Chrome
+
 
