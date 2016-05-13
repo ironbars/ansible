@@ -54,7 +54,7 @@ vim_plugin_list:
     gitname: vim-airline
   - gitroot: scrooloose
     gitname: nerdcommenter
-  - gitroot: ctrlp.vim
+  - gitroot: ctrlpvim
     gitname: ctrlp.vim
   - gitroot: mileszs
     gitname: ack.vim
