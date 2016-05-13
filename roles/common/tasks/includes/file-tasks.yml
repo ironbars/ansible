@@ -55,4 +55,9 @@
     owner: mpatton
     group: users
     state: directory
+
+- name: install vim plugins
+  git: repo=https://github.com/{{ item.gitroot }}/{{ item.gitname }}.git
+       dest=/home/mpatton/.vim/bundle/{{ item.gitname }}
+  with_items: "{{ vim_plugin_list }}"
 ...
