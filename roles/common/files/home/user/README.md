@@ -17,8 +17,9 @@ Install AUR Packages
 * vim-pathogen
 * montecarlo-font
 * dropbox
-* nvpy
+* nvpy-git
     * Dependency: tk (in official repos - use pacman to install)
+    * Dependency: python2-setuptools (in official repos - use pacman to install)
 
 ### General ###
 * numix-themes-blue
@@ -80,9 +81,20 @@ Other Manual Configuration
 
 3. For Chrome:
 
-    * Openbox: go to chrome://settings and click "Use GTK+ theme"
-    * i3: add the "Arc Dark" theme to Chrome
+    * Go to chrome://settings and click "Use GTK+ theme"
     * Add AdBlock to Chrome
     * Add Vimium to Chrome
 
+   Alternatively, this can all be done by signing in to Chrome.
+
+4. Add a sane symlink to the Chrome executable (as root). Like so:
+   `ln -s /usr/bin/google-chrome-stable /usr/bin/chrome`
+
+5. As root, edit `/etc/lightdm/lightdm-gtk-greeter.conf`.
+
+    * `background=/etc/lightdm/backgrounds/Army-Samurai-Wallpaper-HD.jpg`
+    * `theme-name=Numix-Frost` (Openbox/general)
+    * `theme-name=Arc-Darker` (i3/development)
+    * `font-name=Source Sans Pro 10`
+    * `xft-antialias=true`
 

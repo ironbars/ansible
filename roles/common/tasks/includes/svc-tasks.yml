@@ -1,0 +1,4 @@
+---
+# Enable services for the common role
+- service: name=lightdm enabled=yes
+...
