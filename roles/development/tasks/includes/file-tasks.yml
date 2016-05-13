@@ -30,7 +30,7 @@
 
 - name: add symlink for wallpaper
   file:
-    src: home/user/Pictures/wallpaper/digital-rain.png
+    src: home/user/Pictures/wallpapers/digital-rain.png
     dest: /home/mpatton/.wallpaper
     owner: mpatton
     group: users
