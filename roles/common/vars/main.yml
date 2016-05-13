@@ -43,6 +43,7 @@ misc_pkg_list:
   - tmux
   - asciidoc
   - archey3
+  - alsa-utils
   - python
   - lightdm
   - lightdm-gtk-greeter
