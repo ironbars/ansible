@@ -16,6 +16,7 @@ Install AUR Packages
 * google-chrome
 * vim-pathogen
 * montecarlo-font
+* ttf-monaco
 * dropbox
 * nvpy
     * Dependency: tk (in official repos - use pacman to install)
