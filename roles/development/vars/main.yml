@@ -2,12 +2,13 @@
 # Variable file for the "development" role
 window_mgr_list:
   - i3-wm
+  - i3status
+  - i3lock
   - rofi
   - flattr-icon-theme
   - feh
 
 dev_tools_list:
-  - ack
   - gdb
 
 lang_pkg_list:

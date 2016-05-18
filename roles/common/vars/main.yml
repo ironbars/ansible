@@ -37,15 +37,27 @@ misc_pkg_list:
   - git
   - gvim
   - zsh
+  - ack
   - lxterminal
   - lxappearance
   - tmux
   - asciidoc
   - archey3
+  - alsa-utils
   - python
   - lightdm
   - lightdm-gtk-greeter
   - compton
+
+vim_plugin_list:
+  - gitroot: vim-airline
+    gitname: vim-airline
+  - gitroot: scrooloose
+    gitname: nerdcommenter
+  - gitroot: ctrlpvim
+    gitname: ctrlp.vim
+  - gitroot: mileszs
+    gitname: ack.vim
 
 # File vars
 dir_list:
