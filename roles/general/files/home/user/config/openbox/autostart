@@ -2,5 +2,7 @@ nitrogen --restore &
 volumeicon &
 compton --config ~/.config/compton.conf --shadow-exclude 'n:a:Conky' -b &
 tint2 &
+xautolock -time 10 -locker "systemctl suspend" &
+xss-lock -- dm-tool lock &
 #conky &
 #/usr/lib/lxpolkit/lxpolkit &

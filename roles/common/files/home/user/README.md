@@ -20,6 +20,7 @@ Install AUR Packages
 * nvpy-git
     * Dependency: tk (in official repos - use pacman to install)
     * Dependency: python2-setuptools (in official repos - use pacman to install)
+* xss-lock
 
 ### General ###
 * numix-themes-blue
