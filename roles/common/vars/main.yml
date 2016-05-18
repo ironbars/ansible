@@ -27,6 +27,7 @@ font_pkg_list:
 admin_pkg_list:
   - htop
   - lsof
+  - rsync
 
 archive_pkg_list:
   - unzip
