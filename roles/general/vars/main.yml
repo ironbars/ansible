@@ -21,4 +21,7 @@ misc_pkg_list:
   - numix-themes
   - scrot
   - gpicview
+
+music_pkg_list:
+  - ario
 ...

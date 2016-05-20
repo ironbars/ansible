@@ -33,4 +33,8 @@
 - name: install other utils
   pacman: name={{ item }} state=present
   with_items: "{{ misc_pkg_list }}"
+
+- name: install music necessities
+  pacman: name={{ item }} state=present
+  with_items: "{{ music_pkg_list }}"
 ...
