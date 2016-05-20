@@ -44,11 +44,15 @@ misc_pkg_list:
   - tmux
   - asciidoc
   - archey3
-  - alsa-utils
   - python
   - lightdm
   - lightdm-gtk-greeter
   - compton
+
+music_pkg_list:
+  - alsa-utils
+  - mpd
+  - beets
 
 vim_plugin_list:
   - gitroot: vim-airline

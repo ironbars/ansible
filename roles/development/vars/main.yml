@@ -18,4 +18,8 @@ lang_pkg_list:
   - rust
   - sqlite
   - ipython
+
+music_pkg_list:
+  - mpc
+  - ncmpcpp
 ...
