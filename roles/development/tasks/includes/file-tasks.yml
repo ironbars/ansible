@@ -28,6 +28,13 @@
     owner: mpatton
     group: users
 
+- name: copy bin directory
+  copy:
+    src: home/user/bin/
+    dest: /home/mpatton/bin/
+    owner: mpatton
+    group: users
+
 - name: copy Pictures directory
   copy:
     src: home/user/Pictures/
