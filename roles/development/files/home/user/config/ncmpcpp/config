@@ -428,7 +428,7 @@ mpd_music_dir = ~/Music
 #
 ## Available values: none, basic, extended, perl.
 ##
-#regular_expressions = basic
+regular_expressions = extended
 #
 ##
 ## Note: If below is enabled, ncmpcpp will ignore leading
