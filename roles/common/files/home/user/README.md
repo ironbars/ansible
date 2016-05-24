@@ -33,6 +33,7 @@ Install AUR Packages
 * numix-shine-icon-theme-git
 
 ### Development ###
+* i3blocks
 * gtk-theme-arc
 * moka-icon-theme-git
     * Dependency: faba-icon-theme-git
@@ -64,7 +65,11 @@ This section is for "development" machines.
     * Font: Source Sans Pro 10
     * Icon theme: Flattr
 
-2. (i3) - this should be taken care of by the copied config files.
+2. (i3) - this should mostly be taken care of by the copied config files.
+   For AUR programs:
+
+    * In the `~/.config/i3/config`, uncomment the `xss-lock` and `i3blocks`
+      lines after these programs are installed.
 
 Other Manual Configuration
 --------------------------
