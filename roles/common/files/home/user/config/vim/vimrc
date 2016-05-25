@@ -60,6 +60,13 @@ nmap <C-h> <C-W>h
 nmap <C-l> <C-W>l
 imap <Esc> <C-c>
 
+"GUI settings
+"================================================
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
+
 "Syntax highlighting (for strange extensions)
 "================================================
 au BufRead,BufNewFile *.sage set filetype=python

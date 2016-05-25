@@ -1,12 +1,5 @@
 ---
 # File tasks for the common role
-- name: copy sourcing vimrc
-  copy: 
-    src: home/user/vimrc 
-    dest: /home/mpatton/.vimrc
-    owner: mpatton
-    group: users
-
 - name: copy nvPY config file
   copy:
     src: home/user/nvpy.cfg
@@ -21,12 +14,13 @@
     owner: mpatton
     group: users
 
-- name: copy vim directory
-  copy:
-    src: home/user/vim/
-    dest: /home/mpatton/.vim/
+- name: add symlink for vim directory
+  file: 
+    src: home/mpatton/.config/vim/
+    dest: /home/mpatton/.vim
     owner: mpatton
     group: users
+    state: link
 
 - name: copy sudoers file
   copy:
@@ -51,13 +45,13 @@
 
 - name: create directory for vim plugins
   file:
-    path: /home/mpatton/.vim/bundle
+    path: /home/mpatton/.config/vim/bundle
     owner: mpatton
     group: users
     state: directory
 
 - name: install vim plugins
   git: repo=https://github.com/{{ item.gitroot }}/{{ item.gitname }}.git
-       dest=/home/mpatton/.vim/bundle/{{ item.gitname }}
+       dest=/home/mpatton/.config/vim/bundle/{{ item.gitname }}
   with_items: "{{ vim_plugin_list }}"
 ...

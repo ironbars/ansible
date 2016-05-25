@@ -40,7 +40,7 @@ alias cp='cp -i'
 alias df='df -h'
 alias free='free -h'
 alias bashrc='vim ~/.config/bash/bashrc-real'
-alias vimrc='vim ~/.config/vim/vimrc-real'
+alias vimrc='vim ~/.config/vim/vimrc'
 alias sb='source ~/.config/bash/bashrc-real'
 alias cls='echo "Use Ctrl+L!!!"'
 
