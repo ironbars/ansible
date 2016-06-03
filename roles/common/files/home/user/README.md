@@ -95,7 +95,12 @@ Other Manual Configuration
    Alternatively, this can all be done by signing in to Chrome.
 
 4. Add a sane symlink to the Chrome executable (as root). Like so:
+
    `ln -s /usr/bin/google-chrome-stable /usr/bin/chrome`
+
+   Also, add a symlink for other programs to open the browser:
+
+   `ln -s /usr/bin/google-chrome-stable /usr/bin/google-chrome`
 
 5. As root, edit `/etc/lightdm/lightdm-gtk-greeter.conf`.
 
