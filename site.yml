@@ -2,5 +2,5 @@
 - hosts: tests
   roles:
     - common
-    - development
+      #    - development
 ...

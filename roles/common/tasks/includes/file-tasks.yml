@@ -16,7 +16,7 @@
 
 - name: add symlink for vim directory
   file: 
-    src: home/mpatton/.config/vim/
+    src: /home/mpatton/.config/vim/
     dest: /home/mpatton/.vim
     owner: mpatton
     group: users
