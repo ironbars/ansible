@@ -9,6 +9,7 @@ window_mgr_list:
   - feh
   - acpi
   - sysstat
+  - network-manager-applet
 
 dev_tools_list:
   - gdb
